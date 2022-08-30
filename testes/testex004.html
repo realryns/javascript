@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário em Dólar</title>
+    <style>
+        body {
+
+            background-color: gray;
+            color: aliceblue;
+            font: normal 20pt Arial
+
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var sal1 = Number(window.prompt('Digite o seu salário do primeiro mês:'))
+        var sal2 = Number(window.prompt('Digite o seu salário do segundo mês:'))
+        var saltotal = sal1 + sal2
+        var nome = window.prompt('Digite o seu nome:')
+
+        document.write(`Olá, <strong>${nome}!</strong></br>`)
+        document.write(`Seu nome em letra maiúsculas é: <strong>${nome.toUpperCase()}</strong></br>`)
+        document.write(`Seu nome em letras minúsculas é: <strong>${nome.toLowerCase()}</strong></br>`)
+        document.write(`A soma de seus dois salários é de: ${saltotal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>
+</body>
+</html>

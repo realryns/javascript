@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleção DOM</title>
+    <style>
+        body {
+            background-color: gray;
+            color: aliceblue;
+            font: normal 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando a seleção de DOM</h1>
+    <hr>
+    <p><strong>Parágrafo 1</strong></p>
+    <p><div id="2"><mark>Parágrafo 2</mark></div></p>
+    <p><div name="3"><del>Parágrafo 3</del></div></p>
+    <p><div class="4"><ins>Parágrafo 4</ins></div></p>
+    <p><div id="oi">Parágrafo 5</div></p>
+    <script>
+        var body = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementById('2')
+        var p3 = window.document.getElementsByName('3')[0]
+        var p4 = window.document.getElementsByClassName('4')[0]
+        var p5 = window.document.querySelector('div#oi')
+        var ask = Number(window.prompt('Qual o seu salário?'))
+
+        p1.style.color = 'blue'
+        p2.style.color = 'green'
+        p3.style.color = 'yellow'
+        p4.style.color = 'red'
+
+        body.style.backgroundColor = 'black'
+
+        document.write(`Este aqui é o primeiro parágrafo: ${p1.innerHTML.toUpperCase()}</br>`)
+        document.write(`Este aqui é o segundo parágrafo: ${p2.innerHTML.toLowerCase()}</br>`)
+        document.write(`Este aqui é o terceiro parágrafo: ${p3.innerHTML}</br>`)
+        document.write(`Este aqui é o quarto parágrafo: ${p4.innerHTML}</br>`)
+        document.write(`Este aqui é o quinto parágrafo: ${p5.innerHTML}</br>`)
+        document.write(`Este aqui é o seu salário: ${ask.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+        
+
+
+
+        
+
+    </script>
+</body>
+</html>

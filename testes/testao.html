@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Agora</title>
+    <link rel="shortcut icon" href="https://w7.pngwing.com/pngs/672/907/png-transparent-favicon-buggi-trademark-logo-circle.png" type="image/x-icon">
+</head>
+<body>
+    <script>
+
+        var s = window.prompt('Qual o seu nome?')
+        var salario = Number(window.prompt('Qual o seu salário?'))
+        document.write(`Olá ${s}, seu nome tem ${s.length} letras.<br/>`)
+        document.write(`${s.toUpperCase()} possui o salário de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)   
+        
+    </script>
+</body>
+</html>

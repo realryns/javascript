@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(174, 154, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal 20pt Arial;
+    
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;    
+}
+
+footer {
+    color: white;
+    text-align: center;
+}

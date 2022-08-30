@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada no País</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font: normal 18pt Arial;        
+        }
+    </style>
+</head>
+<body>
+    <h1>Entrada no País</h1>
+    Verifique se é possível dar entrada ao país desejado!
+    <h2><p><strong>Requisitos:</strong></p></h2>
+    <p>Japão - idade maior do que 15.</p>
+    <p>Brasil - idade entre 15 e 18.</p>
+    <p>Estados Unidos - idade menor do que 13.</p>
+    <p>Alemanha - idade igual a 13 anos.</p>
+    <h2>Insira os dados necessários para dar continuação.</h2>
+    Nome: <input type="text" name="txtnome" id="txtnome"> 
+    <p>Idade: <input type="number" name="txtage" id="txtage"></p> 
+    <p>País desejado: <input type="text" name="txtpais" id="txtpais"></p>
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar() {
+        
+        var nome = window.document.querySelector('input#txtnome').value
+        var idade = window.document.querySelector('input#txtage')
+        var iddx = Number(idade.value)
+        var pais = window.document.querySelector('input#txtpais').value
+
+            if ((pais.toLowerCase() == 'estados unidos' || pais.toLowerCase() == 'eua') && iddx < 13) {
+                res.innerHTML = `Olá ${nome.toUpperCase()}, você <strong>PODE</strong> entrar nos ${pais.toUpperCase()}`
+            } else {
+                res.innerHTML = `Olá ${nome.toUpperCase()}, você <strong>NÃO</strong> pode entrar nos ${pais.toUpperCase()}`
+            }
+        }
+        
+    </script>
+</body>
+</html>

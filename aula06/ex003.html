@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!---Assim que se faz um coment[ario em HTML!-->
+    <style>
+      body {
+        background-color: rgb(83, 83, 82);
+        color: white;
+        font: normal 20pt Arial;
+      }
+      h1 {
+        color: aqua; /*Assim que se faz um comentario em CSS */
+      }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script> 
+    
+        /*
+        var n1 = window.prompt('Digite um numero: ')
+        var n2 = window.prompt('Digite outro numero: ')
+        var s = n1 + n2
+        window.alert('A soma é =' + s)
+
+        Os comandos usados foram window prompt, porém, estes são comandos de variável string, criando uma CONCATENAÇÃO ao invés de gerar uma soma dos números inseridos pelo cliente.
+
+        (number + number) = Adição
+        (string + string) = Concatenação (Exemplo: 3 + 3 = 33)
+
+        Para ser realizada uma soma, deve-se converter as variáveis,
+        usando o comando Number.parseInt(n) para inteiros, e Number.parseFloat(n) para reais.
+        */
+
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Não obrigatório neste caso, apenas um teste.
+
+        /* Hoje em dia, 07/22, é possível usar apenas o comando "Number",
+        que automaticamente define e interpreta se são números inteiros ou reais.
+        */
+       
+    </script>    
+</body>
+</html>
