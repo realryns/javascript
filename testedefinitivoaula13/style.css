@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 body {
-    
-    background-image: linear-gradient(45deg, #7F0DFF, #f34ded, #FF0072, #FF6400, #FF006E);   
+    background-image: linear-gradient(90deg, rgb(159, 159, 245), rgb(77, 77, 247));
     background-attachment: fixed;
     font: normal 15pt Arial;
     font-family: Arial, Helvetica, sans-serif;
@@ -15,15 +14,15 @@ header {
 
 section {
     background-color: white;
-    width: 600px;
-    padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px #FF6400;
+    width: 500px;
     margin: auto;
+    padding: 10px;
 }
 
 footer {
     color: white;
-    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    font-style: italic;
 }
